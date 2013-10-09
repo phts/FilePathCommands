@@ -1,4 +1,5 @@
 [
+  { "caption": "Reveal in Side Bar", "command": "reveal_in_side_bar" },
   { "caption": "-"},
   { "caption": "Copy File Path", "command": "copy_path" },
   { "caption": "Copy Relative Path", "command": "copy_relative_path" },
