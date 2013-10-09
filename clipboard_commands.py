@@ -35,12 +35,6 @@ class ClipboardCommand(sublime_plugin.TextCommand):
     return not not full_file_path(self.view)
 
 
-class CopyPathCommand(ClipboardCommand):
-  def run(self, edit):
-    fp = full_file_path(self.view)
-    copy(fp)
-
-
 class CopyFileNameCommand(ClipboardCommand):
   def run(self, edit):
     fp = full_file_path(self.view)
