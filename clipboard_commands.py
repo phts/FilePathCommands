@@ -20,7 +20,6 @@ def relative_path(full_path):
       break
   if not folder: return False
 
-  folder, folder_name = os.path.split(folder)
   relative_path = full_path.replace(folder+"\\", "", 1)
   relative_path = relative_path.replace("\\", "/")
   return relative_path
