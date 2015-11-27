@@ -20,13 +20,17 @@ def relative_path(full_path):
       break
   if not folder: return False
 
-  relative_path = full_path.replace(folder+"\\", "", 1)
-  relative_path = relative_path.replace("\\", "/")
+  relative_path = conform_path(full_path).replace(conform_path(folder+"/"), "", 1)
   return relative_path
 
 def copy(text):
   sublime.set_clipboard(text)
   sublime.status_message("Copied "+text)
+
+def conform_path(path):
+  if sublime.platform() == "windows":
+    path = path.replace("\\", "/")
+  return path
 
 
 class ClipboardCommand(sublime_plugin.TextCommand):
