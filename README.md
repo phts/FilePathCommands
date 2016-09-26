@@ -3,9 +3,9 @@
 ## Tab context menu
 
 * Reveal in Side Bar
+* Copy File Name
 * Copy File Path
 * Copy Relative Path
-* Copy File Name
 * Copy Dir Path
 
 ## Document context menu
