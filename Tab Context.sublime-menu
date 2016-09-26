@@ -1,9 +1,24 @@
 [
-  { "caption": "Reveal in Side Bar", "command": "reveal_in_side_bar" },
-  { "caption": "-"},
-  { "caption": "Copy File Name", "command": "copy_file_name" },
-  { "caption": "-"},
-  { "caption": "Copy Relative Path", "command": "copy_relative_path" },
-  { "caption": "Copy File Path", "command": "copy_path" },
-  { "caption": "Copy Dir Path", "command": "copy_dir_path" }
+	{
+		"caption": "Reveal in Side Bar",
+		"command": "reveal_in_side_bar"
+	},
+	{"caption": "-"},
+	{
+		"caption": "Copy File Name",
+		"command": "copy_file_name"
+	},
+	{"caption": "-"},
+	{
+		"caption": "Copy Relative Path",
+		"command": "copy_relative_path"
+	},
+	{
+		"caption": "Copy File Path",
+		"command": "copy_path"
+	},
+	{
+		"caption": "Copy Dir Path",
+		"command": "copy_dir_path"
+	}
 ]
