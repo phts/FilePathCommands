@@ -6,6 +6,7 @@
 * Copy File Name
 * Copy File Name without Extension
 * Copy Relative Path
+* Copy Relative Path with Project Folder
 * Copy File Path
 * Copy Dir Path
 

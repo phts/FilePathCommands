@@ -18,6 +18,10 @@
 		"command": "copy_relative_path"
 	},
 	{
+		"caption": "Copy Relative Path with Project Folder",
+		"command": "copy_relative_path", "args": {"with_project_folder": true}
+	},
+	{
 		"caption": "Copy File Path",
 		"command": "copy_path"
 	},
