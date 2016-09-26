@@ -4,8 +4,8 @@
 
 * Reveal in Side Bar
 * Copy File Name
-* Copy File Path
 * Copy Relative Path
+* Copy File Path
 * Copy Dir Path
 
 ## Document context menu
