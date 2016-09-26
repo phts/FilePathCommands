@@ -4,6 +4,7 @@
 
 * Reveal in Side Bar
 * Copy File Name
+* Copy File Name without Extension
 * Copy Relative Path
 * Copy File Path
 * Copy Dir Path

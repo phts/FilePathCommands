@@ -39,9 +39,11 @@ class ClipboardCommand(sublime_plugin.TextCommand):
 
 
 class CopyFileNameCommand(ClipboardCommand):
-  def run(self, edit):
+  def run(self, edit, without_ext=False):
     fp = full_file_path(self.view)
     dir_path, file_name = os.path.split(fp)
+    if without_ext:
+      file_name = os.path.splitext(file_name)[0]
     copy(file_name)
 
 

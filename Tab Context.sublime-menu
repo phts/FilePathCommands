@@ -8,6 +8,10 @@
 		"caption": "Copy File Name",
 		"command": "copy_file_name"
 	},
+	{
+		"caption": "Copy File Name without Extension",
+		"command": "copy_file_name", "args": {"without_ext": true}
+	},
 	{"caption": "-"},
 	{
 		"caption": "Copy Relative Path",
