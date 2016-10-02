@@ -8,6 +8,6 @@
 	},
 	{
 		"caption": "Copy Relative Path with Line Number",
-		"command": "copy_relative_path_with_line_number"
+		"command": "copy_relative_path", "args": {"with_line_number": true}
 	}
 ]

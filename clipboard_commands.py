@@ -12,7 +12,7 @@ def get_row(view):
   row, col = view.rowcol(point)
   return row+1
 
-def relative_path(full_path, with_project_folder):
+def relative_path(full_path, with_project_folder=False):
   folder = False
   for f in sublime.active_window().folders():
     if full_path.startswith(f):
@@ -58,16 +58,10 @@ class CopyDirPathCommand(ClipboardCommand):
 
 
 class CopyRelativePathCommand(ClipboardCommand):
-  def run(self, edit, with_project_folder=False):
+  def run(self, edit, with_project_folder=False, with_line_number=False):
     fp = full_file_path(self.view)
     rp = relative_path(fp, with_project_folder)
     if not rp: rp = fp
+    if with_line_number:
+      rp += "::" + str(get_row(self.view))
     copy(rp)
-
-
-class CopyRelativePathWithLineNumberCommand(ClipboardCommand):
-  def run(self, edit):
-    fp = full_file_path(self.view)
-    rp = relative_path(fp)
-    if not rp: rp = fp
-    copy(rp + ":" + str(get_row(self.view)))
