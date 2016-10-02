@@ -63,5 +63,5 @@ class CopyRelativePathCommand(ClipboardCommand):
     rp = relative_path(fp, with_project_folder)
     if not rp: rp = fp
     if with_line_number:
-      rp += "::" + str(get_row(self.view))
+      rp += ":" + str(get_row(self.view))
     copy(rp)
