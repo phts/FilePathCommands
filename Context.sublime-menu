@@ -9,5 +9,12 @@
 	{
 		"caption": "Copy Relative Path with Line Number",
 		"command": "copy_relative_path", "args": {"with_line_number": true}
+	},
+	{
+		"caption": "Insert Relative Path of Another File",
+		"command": "insert_relative_path_of_another_file"
+	},
+	{
+		"caption": "-"
 	}
 ]

@@ -14,3 +14,4 @@
 
 * Copy Relative Path
 * Copy Relative Path with Line Number
+* Insert Relative Path of Another File
