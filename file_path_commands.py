@@ -36,12 +36,12 @@ def conform_path(path):
   return path
 
 
-class ClipboardCommand(sublime_plugin.TextCommand):
+class FilePathCommand(sublime_plugin.TextCommand):
   def is_enabled(self):
     return not not full_file_path(self.view)
 
 
-class CopyFileNameCommand(ClipboardCommand):
+class CopyFileNameCommand(FilePathCommand):
   def run(self, edit, without_ext=False):
     fp = full_file_path(self.view)
     dir_path, file_name = os.path.split(fp)
@@ -50,14 +50,14 @@ class CopyFileNameCommand(ClipboardCommand):
     copy(file_name)
 
 
-class CopyDirPathCommand(ClipboardCommand):
+class CopyDirPathCommand(FilePathCommand):
   def run(self, edit):
     fp = full_file_path(self.view)
     dir_path, file_name = os.path.split(fp)
     copy(dir_path)
 
 
-class CopyRelativePathCommand(ClipboardCommand):
+class CopyRelativePathCommand(FilePathCommand):
   def run(self, edit, with_project_folder=False, with_line_number=False):
     fp = full_file_path(self.view)
     rp = relative_path(fp, with_project_folder)
